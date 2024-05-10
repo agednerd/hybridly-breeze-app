@@ -7,6 +7,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## agednerd/hybridly-breeze-app
+
+This repository contains the base scaffolded application of a [laravel/breeze](https://laravel.com/docs/11.x/starter-kits#breeze-and-inertia) but instead of using [Inertia](https://inertiajs.com/) I swapped everything to work with Hybridly.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

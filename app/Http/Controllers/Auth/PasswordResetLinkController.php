@@ -3,21 +3,20 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use Hybridly\View\Factory;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Validation\ValidationException;
-use Inertia\Inertia;
-use Inertia\Response;
 
 class PasswordResetLinkController extends Controller
 {
     /**
      * Display the password reset link request view.
      */
-    public function create(): Response
+    public function create(): Factory
     {
-        return Inertia::render('Auth/ForgotPassword', [
+        return hybridly('auth.forgot-password', [
             'status' => session('status'),
         ]);
     }
